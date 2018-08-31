@@ -1,0 +1,2 @@
+F:\Facultad\Tesis\Repositorio\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+F:\Facultad\Tesis\Repositorio\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

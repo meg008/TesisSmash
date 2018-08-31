@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class HealthData
+public class ShieldData
 {
-    [SerializeField] private int maxHealth;
+    [SerializeField] private int maxShield;
 
-    public int MaxHealth
+    public int MaxShield
     {
         get
         {
-            return maxHealth;
+            return maxShield;
         }
     }
 }

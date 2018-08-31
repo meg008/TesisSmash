@@ -15,6 +15,9 @@ public class Character : MonoBehaviour
     private Habilities habilities;
     private Health health;
 
+    //Agregado de Escudo
+    private Shield escudo;
+
     public CharacterType Type
     {
         get
@@ -71,10 +74,10 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if(transform.position.y < -6)
+        if (transform.position.y < -6)
         {
             health.Damage(20);
-            if(Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
+            if (Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
         }
     }
 

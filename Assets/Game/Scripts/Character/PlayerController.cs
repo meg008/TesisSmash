@@ -41,6 +41,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump" + ID.ToString()))
             character.Jump();
 
+        //Agregado Block
+        if (Input.GetButtonDown("Block" + ID.ToString()))
+            character.Attack(AttackType.ChargeBlock);
+
+        if (Input.GetButtonUp("Block" + ID.ToString()))
+            character.Attack(AttackType.Block);
+
         if (Input.GetKeyDown(KeyCode.Space))
             character.UltPercent += 0.2f;
 

@@ -8,7 +8,8 @@ public class HabilitiesData
     [SerializeField] private Skill basicAttack;
     [SerializeField] private Skill heavyAttack;
     [SerializeField] private Skill ultimate;
-    
+    [SerializeField] private Skill blockAttack;
+
     public Skill BasicAttack
     {
         get
@@ -28,6 +29,14 @@ public class HabilitiesData
         get
         {
             return ultimate;
+        }
+    }
+
+    public Skill BlockAttack
+    {
+        get
+        {
+            return blockAttack;
         }
     }
 }

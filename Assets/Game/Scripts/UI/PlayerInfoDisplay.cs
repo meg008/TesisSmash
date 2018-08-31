@@ -18,6 +18,9 @@ public class PlayerInfoDisplay : MonoBehaviour
         playerImage.sprite = p.Character.Type.GeneralData.Icon;
         p.Character.GetComponent<Health>().OnLifeChange.AddListener(RefreshLife);
         p.Character.GetComponent<Habilities>().OnUltimatePercentChange.AddListener(RefreshUltimate);
+        
+        //Agregado Escudo
+        p.Character.GetComponent<Shield>().OnShieldChange.AddListener(RefreshShield);
     }
 
     private void RefreshLife(float amount)
@@ -28,5 +31,10 @@ public class PlayerInfoDisplay : MonoBehaviour
     private void RefreshUltimate(float amount)
     {
         playerUltPercent.fillAmount = amount;
+    }
+
+    private void RefreshShield(float amount)
+    {
+        playerShieldBar.fillAmount = amount;
     }
 }

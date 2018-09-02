@@ -93,11 +93,11 @@ public class Habilities : MonoBehaviour
         }
         else if (type == AttackType.ChargeBlock)
         {
-            animHandler.Anim.SetBool("BlockAttack", true);
+			animHandler.Anim.SetBool("Block", false);
         }
         else if (type == AttackType.Block)
         {
-            animHandler.Anim.SetBool("BlockAttack", false);
+			animHandler.Anim.SetBool("Block", true);
         }
     }
 

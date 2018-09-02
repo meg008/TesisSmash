@@ -43,10 +43,10 @@ public class PlayerController : MonoBehaviour
 
         //Agregado Block
         if (Input.GetButtonDown("Block" + ID.ToString()))
-            character.Attack(AttackType.ChargeBlock);
-
+			character.Attack(AttackType.Block);
+		
         if (Input.GetButtonUp("Block" + ID.ToString()))
-            character.Attack(AttackType.Block);
+			character.Attack(AttackType.ChargeBlock);
 
         if (Input.GetKeyDown(KeyCode.Space))
             character.UltPercent += 0.2f;

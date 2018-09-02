@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesis", "Tesis.csproj", "{10855FF6-0250-64CC-9192-A2D2FA7583FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesis.Editor", "Tesis.Editor.csproj", "{2C1050B0-511B-8685-62BD-1E2842A85738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10855FF6-0250-64CC-9192-A2D2FA7583FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10855FF6-0250-64CC-9192-A2D2FA7583FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10855FF6-0250-64CC-9192-A2D2FA7583FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10855FF6-0250-64CC-9192-A2D2FA7583FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1050B0-511B-8685-62BD-1E2842A85738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1050B0-511B-8685-62BD-1E2842A85738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1050B0-511B-8685-62BD-1E2842A85738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1050B0-511B-8685-62BD-1E2842A85738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

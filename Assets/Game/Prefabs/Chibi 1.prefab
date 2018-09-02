@@ -1535,7 +1535,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1605,8 +1605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d670d2630ca80534aa365fd60c614632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicAttack: {fileID: 11400000, guid: e814b31d5e92bd84ab7ab1d0e43614d1, type: 2}
-  heavyAttack: {fileID: 11400000, guid: ca1182583596fed41b21f7d64be868e8, type: 2}
   attackPoint: {fileID: 4471757821971686}
 --- !u!114 &114509765162985494
 MonoBehaviour:

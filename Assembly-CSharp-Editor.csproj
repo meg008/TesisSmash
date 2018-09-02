@@ -117,12 +117,6 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="JMOAssets">
- <HintPath>F:/Facultad/Tesis/Repositorio/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
- </Reference>
- <Reference Include="JMOAssets_CartoonFXFreeWelcome">
- <HintPath>F:/Facultad/Tesis/Repositorio/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">

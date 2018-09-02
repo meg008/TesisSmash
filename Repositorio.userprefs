@@ -1,0 +1,39 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\Scripts\Data\HealthData.cs">
+    <Files>
+      <File FileName="Assets\Game\Scripts\Character\Shield.cs" Line="56" Column="35" />
+      <File FileName="Assets\Game\Scripts\Character\Health.cs" Line="14" Column="27" />
+      <File FileName="Assets\Game\Scripts\Character\Character.cs" Line="72" Column="53" />
+      <File FileName="Assets\Game\Scripts\Data\ShieldData.cs" Line="8" Column="43" />
+      <File FileName="Assets\Game\Scripts\Data\HealthData.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Repositorio" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Game" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Character" expanded="True" />
+                  <Node name="Data" expanded="True">
+                    <Node name="HealthData.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="Repositorio" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

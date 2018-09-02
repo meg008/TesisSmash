@@ -14,8 +14,6 @@ public class Character : MonoBehaviour
     private Movement movement;
     private Habilities habilities;
     private Health health;
-
-    //Agregado de Escudo
     private Shield escudo;
 
     public CharacterType Type
@@ -64,10 +62,12 @@ public class Character : MonoBehaviour
         movement = GetComponent<Movement>();
         habilities = GetComponent<Habilities>();
         health = GetComponent<Health>();
+		escudo = GetComponent<Shield> ();
 
         movement.Data = type.MovementData;
         habilities.Data = type.SkillData;
         health.Data = type.HealthData;
+		escudo.Data = type.ShieldData;
 
         health.OnDeath.AddListener(OnDeathCallback);
     }

@@ -70,6 +70,7 @@
      <Compile Include="Assets\Game\Scripts\Effects\Effect.cs" />
      <Compile Include="Assets\Game\Scripts\Effects\EffectManager.cs" />
      <Compile Include="Assets\Game\Scripts\Effects\InstantEffect.cs" />
+     <Compile Include="Assets\Game\Scripts\Effects\ShieldDamageEffect.cs" />
      <Compile Include="Assets\Game\Scripts\Effects\TickEffect.cs" />
      <Compile Include="Assets\Game\Scripts\Effects\TimeEffect.cs" />
      <Compile Include="Assets\Game\Scripts\GameManager.cs" />

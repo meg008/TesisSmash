@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private CharacterType type;
     [SerializeField] private Text displayName;
+    [SerializeField] private LayerMask damageLayer;
 
     private AnimatorEventHandler aeh;
     private Movement movement;
@@ -74,9 +75,11 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y < -6)
+        if (transform.position.y < -6 || Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.15f, damageLayer))
+        //if (transform.position.y < -6
         {
-            health.Damage(20);
+            //health.Damage(20);
+            health.Damage(1000);
             if (Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
         }
     }

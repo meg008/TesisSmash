@@ -794,7 +794,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 546271508}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5ef7ac5bfbb625a4292fada11645f973, type: 3}
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 670976661}
   - component: {fileID: 670976660}
   - component: {fileID: 670976659}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3192,7 +3192,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1995595469}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: da7a72194353e144f910c4db07f2162e, type: 3}

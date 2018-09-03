@@ -1200,6 +1200,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: 4d7548487d74f614a91a4371fb93713e, type: 2}
   displayName: {fileID: 114768063510632306}
+  damageLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &114768063510632306
 MonoBehaviour:
   m_ObjectHideFlags: 1

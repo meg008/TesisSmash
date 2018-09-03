@@ -1,0 +1,9 @@
+diff a/Assets/Game/Scripts/Character/PlayerController.cs b/Assets/Game/Scripts/Character/PlayerController.cs	(rejected hunks)
+@@ -43,7 +43,6 @@
+ 
+         //Agregado Block
+         if (Input.GetButtonDown("Block" + ID.ToString()))
+-
+ 			character.Attack(AttackType.Block);
+ 		
+         if (Input.GetButtonUp("Block" + ID.ToString()))

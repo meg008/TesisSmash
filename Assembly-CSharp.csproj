@@ -76,6 +76,7 @@
      <Compile Include="Assets\Game\Scripts\Skills\MeleeSkill.cs" />
      <Compile Include="Assets\Game\Scripts\Skills\Skill.cs" />
      <Compile Include="Assets\Game\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\AddMinimunPlayers.cs" />
      <Compile Include="Assets\Game\Scripts\UI\BillboardObject.cs" />
      <Compile Include="Assets\Game\Scripts\UI\CharacterButton.cs" />
      <Compile Include="Assets\Game\Scripts\UI\CharacterSelectionPanel.cs" />

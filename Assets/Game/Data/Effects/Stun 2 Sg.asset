@@ -8,9 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6577c7238266b1746891ad8f5fe87b9a, type: 3}
-  m_Name: 10Dam5Dri
+  m_Script: {fileID: 11500000, guid: 7dcf4cdca44b1104781bc639a2e867c7, type: 3}
+  m_Name: Stun 2 Sg
   m_EditorClassIdentifier: 
-  damage: 10
-  force: 1000
-  dirFromForward: {x: 0, y: 0, z: 0}
+  duration: 4

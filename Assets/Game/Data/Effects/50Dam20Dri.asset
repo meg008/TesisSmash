@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6577c7238266b1746891ad8f5fe87b9a, type: 3}
-  m_Name: 10Dam5Dri
+  m_Name: 50Dam20Dri
   m_EditorClassIdentifier: 
-  damage: 10
-  force: 1000
+  damage: 50
+  force: 2400
   dirFromForward: {x: 0, y: 0, z: 0}

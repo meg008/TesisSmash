@@ -9,12 +9,20 @@ public class ShieldDamageEffect : InstantEffect
     [SerializeField] private float force;
     [SerializeField] private Vector3 dirFromForward;
 
+    private Movement mov;
+    private Character chara;
+
     protected override void ApplyEffect(GameObject executer, GameObject target)
     {
         target.GetComponent<Shield>().Damage(damage);
 
-        var dir = Vector3.Normalize(executer.transform.forward + dirFromForward);
-        var finalForce = dir * force;
-        target.GetComponent<Rigidbody>().AddForce(finalForce);
+        chara = target.GetComponent<Character>();
+        if (chara != null)
+            if (!chara.IsBlocking)
+            {
+                var dir = Vector3.Normalize(executer.transform.forward + dirFromForward);
+                var finalForce = dir * force;
+                target.GetComponent<Rigidbody>().AddForce(finalForce);
+            }
     }
 }

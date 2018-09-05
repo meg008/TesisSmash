@@ -16,6 +16,7 @@ public class Character : MonoBehaviour
     private Habilities habilities;
     private Health health;
     private Shield escudo;
+    [SerializeField] private bool isBlocking;
 
     public CharacterType Type
     {
@@ -58,6 +59,19 @@ public class Character : MonoBehaviour
         }
     }
 
+    public bool IsBlocking
+    {
+        get
+        {
+            return isBlocking;
+        }
+
+        set
+        {
+            isBlocking = value;
+        }
+    }
+
     private void Awake()
     {
         movement = GetComponent<Movement>();
@@ -71,6 +85,8 @@ public class Character : MonoBehaviour
 		escudo.Data = type.ShieldData;
 
         health.OnDeath.AddListener(OnDeathCallback);
+
+        IsBlocking = false;
     }
 
     private void Update()

@@ -74,6 +74,7 @@
      <Compile Include="Assets\Game\Scripts\Effects\TickEffect.cs" />
      <Compile Include="Assets\Game\Scripts\Effects\TimeEffect.cs" />
      <Compile Include="Assets\Game\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Game\Scripts\Skills\BlockSkill.cs" />
      <Compile Include="Assets\Game\Scripts\Skills\MeleeSkill.cs" />
      <Compile Include="Assets\Game\Scripts\Skills\Skill.cs" />
      <Compile Include="Assets\Game\Scripts\Spawner.cs" />

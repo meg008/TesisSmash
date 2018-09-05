@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: 10Dam5Dri
   m_EditorClassIdentifier: 
   damage: 10
-  force: 500
+  force: 700
   dirFromForward: {x: 0, y: 0, z: 0}

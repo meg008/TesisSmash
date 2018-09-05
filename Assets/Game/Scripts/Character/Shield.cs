@@ -8,6 +8,7 @@ public class Shield : MonoBehaviour
     private FloatEvent onShieldChange = new FloatEvent();
     private UnityEvent onShieldBreak = new UnityEvent();
     private int shieldAmount;
+    private Character chara;
 
     public ShieldData Data { get; set; }
     public int BonusShield { get; set; }
@@ -67,12 +68,14 @@ public class Shield : MonoBehaviour
     private void Start()
     {
         ShieldAmmount = MaxShield;
+        chara = GetComponentInParent<Character>();
     }
 
     public void Damage(int amount)
     {
         if (!Active) return;
-        ShieldAmmount -= amount;
+        if (chara.IsBlocking == true)
+            ShieldAmmount -= amount;
     }
 
     public void RecoverShield(int amount)

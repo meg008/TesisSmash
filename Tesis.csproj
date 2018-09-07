@@ -283,26 +283,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Game\Scripts\AnimatorEventHandler.cs" />
-    <Compile Include="Assets\Game\Scripts\Character.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\AnimatorEventHandler.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\Character.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\Habilities.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\Health.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\Movement.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\PCPlayerController.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\PlayerController.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\Shield.cs" />
     <Compile Include="Assets\Game\Scripts\Data\CharacterType.cs" />
     <Compile Include="Assets\Game\Scripts\Data\GeneralData.cs" />
     <Compile Include="Assets\Game\Scripts\Data\HabilitiesData.cs" />
     <Compile Include="Assets\Game\Scripts\Data\HealthData.cs" />
     <Compile Include="Assets\Game\Scripts\Data\MovementData.cs" />
+    <Compile Include="Assets\Game\Scripts\Data\ShieldData.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\DamageEffect.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\DriveEffect.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\Effect.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\EffectManager.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\InstantEffect.cs" />
+    <Compile Include="Assets\Game\Scripts\Effects\ShieldDamageEffect.cs" />
+    <Compile Include="Assets\Game\Scripts\Effects\StunEffect.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\TickEffect.cs" />
     <Compile Include="Assets\Game\Scripts\Effects\TimeEffect.cs" />
     <Compile Include="Assets\Game\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Game\Scripts\Habilities.cs" />
-    <Compile Include="Assets\Game\Scripts\Health.cs" />
-    <Compile Include="Assets\Game\Scripts\Movement.cs" />
-    <Compile Include="Assets\Game\Scripts\PCPlayerController.cs" />
-    <Compile Include="Assets\Game\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Game\Scripts\Skills\BlockSkill.cs" />
     <Compile Include="Assets\Game\Scripts\Skills\MeleeSkill.cs" />
     <Compile Include="Assets\Game\Scripts\Skills\Skill.cs" />
     <Compile Include="Assets\Game\Scripts\Spawner.cs" />

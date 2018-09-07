@@ -5,17 +5,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayButton : MonoBehaviour
-{   
-    int maxNumbersOfPlayers = 4;
-    public Button go;
-    private void Start()
-    {        
-        go.onClick.AddListener(StartGame);
+{
+    [SerializeField] private InputField inputField;
+
+    private void Awake()
+    {
+        GetComponent<Button>().onClick.AddListener(StartGame);
     }
 
     private void StartGame()
     {
-               
-        GameManager.Instance.PlayersToStart = maxNumbersOfPlayers;
+        if (inputField.text == "") return;
+
+        var players = Mathf.Clamp(Convert.ToInt32(inputField.text), 0, 4);
+        GameManager.Instance.PlayersToStart = players;
     }
 }

@@ -41,6 +41,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump" + ID.ToString()))
             character.Jump();
 
+        if (Input.GetButtonDown("Block" + ID.ToString()))
+        {
+            character.Attack(AttackType.Block);
+            character.IsBlocking = true;
+        }
+
+        if (Input.GetButtonUp("Block" + ID.ToString()))
+        { 
+            character.Attack(AttackType.ChargeBlock);
+            character.IsBlocking = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
             character.UltPercent += 0.2f;
 
@@ -52,5 +64,21 @@ public class PlayerController : MonoBehaviour
         var pos = Spawner.Instance.GetPlayerStartPos(ID);
         character = Instantiate(SelectedCharacter, pos, Quaternion.identity);
         character.DisplayName = "Player " + ID.ToString();
+        switch (ID)
+        {
+            case 1:
+                character.Pointer.color = Color.red;
+                break;
+            case 2:
+                character.Pointer.color = Color.black;
+                break;
+            case 3:
+                character.Pointer.color = Color.blue;
+                break;
+            case 4:
+                character.Pointer.color = Color.green;
+                break;
+
+        }
     }
 }

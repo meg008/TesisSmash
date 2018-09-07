@@ -9,11 +9,15 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private CharacterType type;
     [SerializeField] private Text displayName;
+    [SerializeField] private Image pointer;
+    [SerializeField] private LayerMask damageLayer;
 
     private AnimatorEventHandler aeh;
     private Movement movement;
     private Habilities habilities;
     private Health health;
+    private Shield escudo;
+    [SerializeField] private bool isBlocking;
 
     public CharacterType Type
     {
@@ -56,25 +60,57 @@ public class Character : MonoBehaviour
         }
     }
 
+    public bool IsBlocking
+    {
+        get
+        {
+            return isBlocking;
+        }
+
+        set
+        {
+            isBlocking = value;
+        }
+    }
+
+    public Image Pointer
+    {
+        get
+        {
+            return pointer;
+        }
+
+        set
+        {
+            pointer = value;
+        }
+    }
+
     private void Awake()
     {
         movement = GetComponent<Movement>();
         habilities = GetComponent<Habilities>();
         health = GetComponent<Health>();
+		escudo = GetComponent<Shield> ();
 
         movement.Data = type.MovementData;
         habilities.Data = type.SkillData;
         health.Data = type.HealthData;
+		escudo.Data = type.ShieldData;
 
         health.OnDeath.AddListener(OnDeathCallback);
+
+        IsBlocking = false;
     }
 
     private void Update()
     {
-        if(transform.position.y < -6)
+        if (transform.position.y < -6 || Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.15f, damageLayer))
+        //if (transform.position.y < -6
         {
-            health.Damage(20);
-            if(Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
+            //health.Damage(20);
+            health.Damage(1000);
+            if (Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
         }
     }
 

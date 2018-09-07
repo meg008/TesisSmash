@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
@@ -9,6 +7,7 @@ public class Movement : MonoBehaviour
     private Rigidbody rb;
     private Animator anim;
     private int jumpCount;
+    [SerializeField] private int canMove;
 
     public MovementData Data { get; set; }
     private float speed
@@ -39,11 +38,25 @@ public class Movement : MonoBehaviour
             return Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.15f, enviromentLayer);
         }
     }
-    
+
+    public int CanMove
+    {
+        get
+        {
+            return canMove;
+        }
+
+        set
+        {
+            canMove = value;
+        }
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+        canMove = 1;
     }
 
     private void Update()
@@ -56,14 +69,15 @@ public class Movement : MonoBehaviour
         var input = Vector3.ClampMagnitude(new Vector3(x, 0f, y), 1f);
         var mov = input * speed;
 
-        rb.velocity = new Vector3(mov.x, rb.velocity.y, mov.z);
+        rb.velocity = new Vector3(mov.x, rb.velocity.y, mov.z) * canMove;
+
         if (input.magnitude > 0.1f)
             transform.rotation = Quaternion.LookRotation(input);
         if (isGrounded)
             jumpCount = 0;
 
-        anim.SetFloat("Velocity", input.magnitude);
-
+        if(canMove == 1)
+            anim.SetFloat("Velocity", input.magnitude);
         rb.angularVelocity = Vector3.zero;
     }
 

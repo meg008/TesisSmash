@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: EarthMeeleBasic
   m_EditorClassIdentifier: 
   effects:
-  - {fileID: 11400000, guid: 46a16e3d2203eaa4cbfe412b1c98065f, type: 2}
+  - {fileID: 11400000, guid: c7b20b9a7b5f10f42b0d2b8e575e6b8f, type: 2}
+  - {fileID: 11400000, guid: 27323ce486be49c47b634d48874dcfba, type: 2}
   areaEffect: 0.5
   VFX: {fileID: 1200750826900094, guid: 54f5599a25896fa46b02c6f2699f8775, type: 2}
+  ultimateChargeAmount: 0.05

@@ -81,7 +81,11 @@ public class GameManager : MonoBehaviour
             if (aux.Count == 0)
                 gameOverPanel.Text.text = "Tie";
             else
+            {
                 gameOverPanel.Text.text = "Player " + aux[0].ID + " has won";
+                //aux[0].gameObject.SetActive(false);
+            }
+            
         }
     }
 }

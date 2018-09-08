@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.79607844, g: 0.8901961, b: 0.20784312, a: 1}
+  m_Color: {r: 0.3114187, g: 0.6277606, b: 0.9411765, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -459,7 +459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: {fileID: 114890168389297300}
   playerImage: {fileID: 114962929522151872}
-  playerHealthBar: {fileID: 114126660640321788}
   playerShieldBar: {fileID: 114145985213367996}
   playerUltPercent: {fileID: 114579492280492968}
 --- !u!114 &114962929522151872

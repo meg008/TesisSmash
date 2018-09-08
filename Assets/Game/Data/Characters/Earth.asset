@@ -25,3 +25,6 @@ MonoBehaviour:
     basicAttack: {fileID: 11400000, guid: e814b31d5e92bd84ab7ab1d0e43614d1, type: 2}
     heavyAttack: {fileID: 11400000, guid: ca1182583596fed41b21f7d64be868e8, type: 2}
     ultimate: {fileID: 11400000, guid: 6f6e468a86d7cef4ebb6b8b5e36bae77, type: 2}
+    blockAttack: {fileID: 0}
+  shieldData:
+    maxShield: 100

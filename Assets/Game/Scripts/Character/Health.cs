@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
 
     public HealthData Data { get; set; }
     public int BonusLife { get; set; }
+
+    //Eventos
     public FloatEvent OnLifeChange
     {
         get

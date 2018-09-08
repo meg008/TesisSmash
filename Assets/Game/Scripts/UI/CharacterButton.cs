@@ -25,6 +25,7 @@ public class CharacterButton : MonoBehaviour
     private void Awake()
     {
         GetComponent<Button>().onClick.AddListener(ClickCallback);
+        
     }
 
     private void ClickCallback()

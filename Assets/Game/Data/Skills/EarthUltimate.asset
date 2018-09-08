@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: EarthUltimate
   m_EditorClassIdentifier: 
   effects:
-  - {fileID: 11400000, guid: 3b6eec9b72e2ce541b9fac9ae079de4b, type: 2}
+  - {fileID: 11400000, guid: 9871fb9fb2cd1e84fa1fbb00be53e536, type: 2}
   areaEffect: 2
   VFX: {fileID: 1200750826900094, guid: 54f5599a25896fa46b02c6f2699f8775, type: 2}
+  ultimateChargeAmount: 0.05

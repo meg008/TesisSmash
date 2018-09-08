@@ -54,12 +54,22 @@ public class Habilities : MonoBehaviour
         }
     }
 
+    private Skill BlockAttack
+    {
+        get
+        {
+            return Data.BlockAttack;
+        }
+    }
+
+
     private void Awake()
     {
         animHandler = GetComponentInChildren<AnimatorEventHandler>();
         animHandler.OnBasicAttack.AddListener(BasicAttackCallback);
         animHandler.OnHeavyAttack.AddListener(HeavyAttackCallback);
         animHandler.OnUltimate.AddListener(UltimateCallback);
+        animHandler.OnBlockAttack.AddListener(BlockCallBack);
     }
 
     public void Attack(AttackType type)
@@ -81,6 +91,20 @@ public class Habilities : MonoBehaviour
         {
             animHandler.Anim.SetTrigger("Ultimate");
         }
+        else if (type == AttackType.ChargeBlock)
+        {
+			animHandler.Anim.SetBool("Block", false);
+        }
+        else if (type == AttackType.Block)
+        {
+			animHandler.Anim.SetBool("Block", true);
+        }
+    }
+
+    public void BlockCallBack()
+    {
+        if (BlockAttack == null) return;
+        BlockAttack.Execute(this, attackPoint.position);
     }
 
     public void BasicAttackCallback()
@@ -114,5 +138,7 @@ public enum AttackType
     Basic,
     ChargeHeavy,
     Heavy,
-    Ultimate
+    Ultimate,
+    Block,
+    ChargeBlock
 }

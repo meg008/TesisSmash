@@ -9,6 +9,7 @@ public class CharacterType : ScriptableObject
     [SerializeField] private MovementData movementData;
     [SerializeField] private HealthData healthData;
     [SerializeField] private HabilitiesData skillData;
+	[SerializeField] private ShieldData shieldData;
 
     public GeneralData GeneralData
     {
@@ -38,4 +39,12 @@ public class CharacterType : ScriptableObject
             return skillData;
         }
     }
+
+	public ShieldData ShieldData
+	{
+		get
+		{
+			return shieldData;
+		}
+	}
 }

@@ -26,29 +26,55 @@ public class PlayerController : MonoBehaviour
     {
         if (!character || !character.Alive) return;
 
-        if (Input.GetButtonDown("Basic" + ID.ToString()))
+        //BASIC
+        if (Input.GetButton("Basic" + ID.ToString()))
+        {
             character.Attack(AttackType.Basic);
+            character.IsBlocking = true;
+        }
+        if (Input.GetButtonUp("Basic" + ID.ToString()))
+        {
+            character.IsBlocking = false;
+        }
 
-        if (Input.GetButtonDown("Heavy" + ID.ToString()))
+        //HEAVY
+        if (Input.GetButton("Heavy" + ID.ToString()))
+        {
             character.Attack(AttackType.ChargeHeavy);
+            character.IsBlocking = true;
+        }
 
         if (Input.GetButtonUp("Heavy" + ID.ToString()))
+        {
             character.Attack(AttackType.Heavy);
+            character.IsBlocking = false;
+        }
 
-        if (Input.GetButtonUp("Ult" + ID.ToString()))
+        //ULTI
+        if (Input.GetButton("Ult" + ID.ToString()))
+        {
             character.Attack(AttackType.Ultimate);
+            character.IsBlocking = true;
+        }
+            if (Input.GetButtonUp("Ult" + ID.ToString()))
+        {
+            character.IsBlocking = false;
+        }
 
-        if (Input.GetButtonDown("Jump" + ID.ToString()))
+        //JUMP
+        if (Input.GetButtonDown("Jump" + ID.ToString()) && !character.IsBlocking)
             character.Jump();
 
-        if (Input.GetButtonDown("Block" + ID.ToString()))
+        //BLOCK
+        //if (Input.GetButtonDown("Block" + ID.ToString()))
+        if (Input.GetButton("Block" + ID.ToString()))
         {
             character.Attack(AttackType.Block);
             character.IsBlocking = true;
         }
 
         if (Input.GetButtonUp("Block" + ID.ToString()))
-        { 
+        {
             character.Attack(AttackType.ChargeBlock);
             character.IsBlocking = false;
         }
@@ -56,7 +82,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             character.UltPercent += 0.2f;
 
-        character.Move(Input.GetAxis("Horizontal" + ID.ToString()), Input.GetAxis("Vertical" + ID.ToString()));
+        //MOVEMENT
+        if (!character.IsBlocking)
+        {
+            character.Move(Input.GetAxis("Horizontal" + ID.ToString()), Input.GetAxis("Vertical" + ID.ToString()));
+        }
     }
 
     public void SpawnCharacter()

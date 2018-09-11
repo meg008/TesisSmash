@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 114576138034045000, guid: 13634cbc94268c4429841f3cf2cb4644, type: 2}
+  - {fileID: 114655469012348408, guid: 0c0043783b65f25419477737db288a5e, type: 2}
   - {fileID: 114667003827370276, guid: 95fe4f1cbc8b5eb4fb37b0c566a76480, type: 2}
   characterButtonPrefab: {fileID: 114912188044821260, guid: 9b20f56e281f01b45bb19d6981f15626,
     type: 2}
@@ -1927,7 +1927,6 @@ GameObject:
   - component: {fileID: 1156782014}
   - component: {fileID: 1156782012}
   - component: {fileID: 1156782013}
-  - component: {fileID: 1156782016}
   m_Layer: 8
   m_Name: PlataformaPiedra
   m_TagString: Untagged
@@ -2001,21 +2000,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1156782016
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1156782011}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1270678012
 GameObject:
   m_ObjectHideFlags: 0

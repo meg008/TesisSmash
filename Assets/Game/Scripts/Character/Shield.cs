@@ -75,7 +75,10 @@ public class Shield : MonoBehaviour
     {
         if (!Active) return;
         if (chara.IsBlocking == true)
+        {
             ShieldAmmount -= amount;
+            GetComponentInChildren<AnimatorEventHandler>().Anim.SetBool("Stun", true);
+        }
     }
 
     public void RecoverShield(int amount)

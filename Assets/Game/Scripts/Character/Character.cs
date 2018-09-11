@@ -110,7 +110,7 @@ public class Character : MonoBehaviour
         {
             //health.Damage(20);
             health.Damage(1000);
-            if (Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
+            //if (Alive) transform.position = Spawner.Instance.GetPlayerSpawnPos();
         }
     }
 

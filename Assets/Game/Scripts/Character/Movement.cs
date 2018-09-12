@@ -35,7 +35,8 @@ public class Movement : MonoBehaviour
     {
         get
         {
-            return Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.15f, enviromentLayer);
+            return Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.50f, enviromentLayer);
+            //return Physics.Raycast(transform.position + Vector3.up * 0.05f, Vector3.down, 0.15f (MAGNITUD), enviromentLayer);
         }
     }
 
@@ -71,13 +72,14 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector3(mov.x, rb.velocity.y, mov.z) * canMove;
 
-        if (input.magnitude > 0.1f)
+        if (input.magnitude > 0.1f && CanMove == 1)
             transform.rotation = Quaternion.LookRotation(input);
         if (isGrounded)
             jumpCount = 0;
 
-        if(canMove == 1)
+        if(canMove == 1 && isGrounded)
             anim.SetFloat("Velocity", input.magnitude);
+
         rb.angularVelocity = Vector3.zero;
     }
 

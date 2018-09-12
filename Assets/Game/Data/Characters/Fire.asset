@@ -17,7 +17,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: e8be336eed4b3e44290193574d6835b2, type: 3}
   movementData:
     speed: 3
-    jumpForce: 180
+    jumpForce: 200
     maxJumps: 2
   healthData:
     maxHealth: 100
